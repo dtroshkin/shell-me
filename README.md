@@ -1,8 +1,7 @@
 # shell-me
 terminal-style portfolio interface. built with react and typescript
 
-https://github.com/user-attachments/assets/1fe5f10f-e8a4-4ca5-8c5f-035026c04b8f
-
+https://github.com/user-attachments/assets/0f73d1d6-dffd-4df8-b712-4d6df3cd3c8f
 ### core features
 - system-like command interface
 - crt screen simulation

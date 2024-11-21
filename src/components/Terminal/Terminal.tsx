@@ -5,7 +5,7 @@ import { Input } from '@components/Terminal/Input/Input.tsx'
 import { Output } from '@components/Terminal/Output/Output.tsx'
 import { TerminalCore } from '@core/terminal.ts'
 import './Terminal.css'
-import { ASCII_ART } from '@/constants/ascii.ts'
+import { ASCII_ART_5 } from '@/constants/ascii.ts'
 
 export default function Terminal() {
   const terminal = useMemo(() => new TerminalCore(), [])
@@ -83,7 +83,7 @@ export default function Terminal() {
       <div className="vignette" />
 
       <div className="terminal-content" ref={terminalContentRef}>
-        <pre className="ascii-art">{ASCII_ART}</pre>
+        <pre className="ascii-art">{ASCII_ART_5}</pre>
         <Output history={history} />
         <Input ref={inputRef} history={history} onCommand={executeCommand} />
       </div>
