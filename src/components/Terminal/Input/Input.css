@@ -1,0 +1,32 @@
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.terminal-input {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  width: 100%;
+}
+
+.command-input {
+  flex: 1;
+  background: transparent !important;
+  border: none;
+  color: var(--color-text-primary) !important;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  caret-color: var(--color-text-primary);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.command-input:-webkit-autofill,
+.command-input:-webkit-autofill:hover,
+.command-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-text-primary);
+  -webkit-box-shadow: 0 0 0 1000px var(--color-background) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,80 @@
+:root {
+  /* Colors */
+  --color-background: #000;
+  --color-text-primary: #00ff00;
+  --color-text-error: #ff0000;
+
+  /* Typography */
+  --font-family-mono: Consolas, 'Cascadia Mono', 'Courier New', Courier,
+    monospace;
+  --line-height-normal: 1.5;
+
+  /* Spacing */
+  --spacing-base: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+
+  /* Effects */
+  --overlay-scanlines: rgba(0, 0, 0, 0.5);
+  --overlay-vignette-start: rgba(0, 0, 0, 0);
+  --overlay-vignette-end: rgba(0, 0, 0, 0.5);
+
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-mono), monospace;
+  font-size: 24px;
+  min-height: 100vh;
+  overflow: hidden !important;
+}
+
+html,
+body,
+pre,
+code,
+input,
+textarea {
+  font-family: var(--font-family-mono), monospace;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .terminal {
+    padding: var(--spacing-base);
+  }
+
+  .terminal-content {
+    height: calc(100vh - calc(var(--spacing-base) * 2));
+  }
+
+  .ascii-art {
+    font-size: 8px;
+  }
+}
+
+@media print {
+  .terminal {
+    background: white;
+    color: black;
+  }
+
+  .crt-overlay,
+  .scan-lines,
+  .vignette {
+    display: none;
+  }
+}

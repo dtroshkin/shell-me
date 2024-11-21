@@ -1,0 +1,40 @@
+.terminal {
+  position: relative;
+  min-height: 100vh;
+  padding: var(--spacing-lg);
+  background-color: var(--color-background);
+  overflow: hidden;
+  font-family: var(--font-family-mono), monospace;
+  color: var(--color-text-primary);
+  line-height: var(--line-height-normal);
+}
+
+.terminal * {
+  font-family: var(--font-family-mono), monospace;
+}
+
+.terminal pre {
+  font-family: var(--font-family-mono), monospace !important;
+}
+
+.terminal-content {
+  max-width: 90vw;
+  margin: 0 auto;
+  height: calc(100vh - calc(var(--spacing-lg) * 2));
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.terminal-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}

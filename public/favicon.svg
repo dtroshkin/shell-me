@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Черный фон -->
+  <rect width="32" height="32" fill="#000000" rx="4" />
+  
+  <!-- Символ ">" в стиле командной строки -->
+  <path 
+    d="M8 10 L12 14 L8 18 M14 18 L20 18" 
+    stroke="#00ff00" 
+    stroke-width="2"
+    stroke-linecap="round"
+    fill="none"
+  />
+  
+  <!-- Эффект свечения -->
+  <path 
+    d="M8 10 L12 14 L8 18 M14 18 L20 18" 
+    stroke="#00ff00" 
+    stroke-width="1"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.5"
+    filter="blur(1px)"
+  />
+</svg>
